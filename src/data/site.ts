@@ -1,7 +1,7 @@
 import { Code2, Smartphone, Palette, Brain, Globe, LayoutDashboard, PenTool, Bot, Sparkles, type LucideIcon } from "lucide-react";
-import sunuSante from "@/assets/project-sunu-sante.jpg";
-import sunetablis from "@/assets/project-sunetablis.jpg";
-import fitness from "@/assets/project-fitness.jpg";
+import sunuSante from "@/assets/sunu_sante_presentation.png.asset.json";
+import sunetablis from "@/assets/sunetablis_presentation.png.asset.json";
+import fitness from "@/assets/cite_leopold_fitness_presentation.png.asset.json";
 
 /**
  * Coordonnées configurables. Laissez une valeur vide ("") pour masquer le lien correspondant.
@@ -45,9 +45,9 @@ export type Project = { slug: string; name: string; desc: string; image: string;
 
 /** Pour ajouter un projet : ajoutez simplement un objet à ce tableau. */
 export const projects: Project[] = [
-  { slug: "sunu-sante", name: "SUNU SANTÉ", desc: "Plateforme numérique permettant de rechercher des établissements de santé et de prendre des rendez-vous médicaux au Sénégal.", image: sunuSante, status: "En développement", tech: [] },
-  { slug: "sunetablis", name: "SUNÉTABLIS", desc: "Solution numérique de gestion des établissements scolaires.", image: sunetablis, status: "En développement", tech: [] },
-  { slug: "cite-leopold-fitness", name: "CITÉ LÉOPOLD FITNESS CLUB", desc: "Application de gestion d'un club de fitness, des membres, des séances et des paiements.", image: fitness, status: "En développement", tech: [] },
+  { slug: "sunu-sante", name: "SUNU SANTÉ", desc: "Plateforme numérique permettant de rechercher des établissements de santé et de prendre des rendez-vous médicaux au Sénégal.", image: sunuSante.url, status: "En développement", tech: [] },
+  { slug: "sunetablis", name: "SUNÉTABLIS", desc: "Solution numérique de gestion des établissements scolaires.", image: sunetablis.url, status: "En développement", tech: [] },
+  { slug: "cite-leopold-fitness", name: "CITÉ LÉOPOLD FITNESS CLUB", desc: "Application de gestion d'un club de fitness, des membres, des séances et des paiements.", image: fitness.url, status: "En développement", tech: [] },
 ];
 
 export const services: { icon: LucideIcon; title: string; desc: string }[] = [
