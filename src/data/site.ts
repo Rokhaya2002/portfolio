@@ -1,7 +1,7 @@
 import { Code2, Smartphone, Palette, Brain, Globe, LayoutDashboard, PenTool, Bot, Sparkles, type LucideIcon } from "lucide-react";
-import sunuSante from "@/assets/project-sunu-sante.jpg";
-import sunetablis from "@/assets/project-sunetablis.jpg";
-import fitness from "@/assets/project-fitness.jpg";
+import sunuSante from "@/assets/sunu_sante_presentation.png.asset.json";
+import sunetablis from "@/assets/sunetablis_presentation.png.asset.json";
+import fitness from "@/assets/cite_leopold_fitness_presentation.png.asset.json";
 
 /**
  * Coordonnées configurables. Laissez une valeur vide ("") pour masquer le lien correspondant.
