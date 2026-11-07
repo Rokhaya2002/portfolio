@@ -37,7 +37,7 @@ export function Navbar() {
 
         <nav className="glass hidden items-center gap-1 rounded-full p-1.5 lg:flex" aria-label="Navigation principale">
           {nav.map((n, i) => {
-            const Icon = icons[i];
+            const Icon = icons[i] ?? Home;
             const active = n.to === "/" ? path === "/" : path.startsWith(n.to);
             return (
               <Link key={n.to} to={n.to} className={`relative flex items-center gap-2 rounded-full px-4 py-2 text-sm transition ${active ? "text-foreground" : "text-muted-foreground hover:text-foreground"}`}>
@@ -60,7 +60,7 @@ export function Navbar() {
         {open && (
           <motion.div initial={{ opacity: 0, y: -12 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -12 }} className="glass mx-4 mt-3 rounded-3xl p-3 lg:hidden">
             {nav.map((n, i) => {
-              const Icon = icons[i];
+              const Icon = icons[i] ?? Home;
               const active = n.to === "/" ? path === "/" : path.startsWith(n.to);
               return (
                 <Link key={n.to} to={n.to} className={`flex items-center gap-3 rounded-2xl px-4 py-3.5 text-base ${active ? "bg-gradient-primary shadow-glow" : "text-muted-foreground"}`}>
