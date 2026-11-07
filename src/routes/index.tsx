@@ -60,14 +60,14 @@ function Home() {
 
           <div className="relative order-1 mx-auto w-full max-w-[340px] sm:max-w-[420px] lg:order-2">
             <div className="absolute left-1/2 top-1/2 h-[115%] w-[115%] -translate-x-1/2 -translate-y-1/2 rounded-full border border-primary-glow/30 bg-[radial-gradient(circle,var(--accent),transparent_70%)]" />
-            <motion.div animate={reduce ? undefined : { y: [0, -10, 0] }} transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}>
+            <motion.div animate={reduce ? {} : { y: [0, -10, 0] }} transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}>
               <Portrait priority />
             </motion.div>
-            <motion.div animate={reduce ? undefined : { y: [0, 8, 0], rotate: [-8, -4, -8] }} transition={{ duration: 5, repeat: Infinity }}
+            <motion.div animate={reduce ? {} : { y: [0, 8, 0], rotate: [-8, -4, -8] }} transition={{ duration: 5, repeat: Infinity }}
               className="glass absolute -left-6 top-10 grid h-16 w-16 place-items-center rounded-2xl sm:-left-12 sm:h-20 sm:w-20">
               <Code2 className="h-8 w-8 text-primary-glow" />
             </motion.div>
-            <motion.div animate={reduce ? undefined : { y: [0, -8, 0] }} transition={{ duration: 7, repeat: Infinity }}
+            <motion.div animate={reduce ? {} : { y: [0, -8, 0] }} transition={{ duration: 7, repeat: Infinity }}
               className="glass absolute -right-4 bottom-16 rotate-6 rounded-2xl px-5 py-3 font-script text-2xl leading-tight text-primary-glow sm:-right-10 sm:text-3xl">
               Code<br />Create<br />Innovate
             </motion.div>
