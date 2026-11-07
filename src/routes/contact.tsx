@@ -7,7 +7,7 @@ import { btnPrimary } from "@/components/Button";
 import { contact } from "@/data/site";
 
 export const Route = createFileRoute("/contact")({
-  validateSearch: (s: Record<string, unknown>): { sujet?: string } => (typeof s.sujet === "string" ? { sujet: s.sujet } : {}),
+  validateSearch: (s: Record<string, unknown>): { sujet?: string } => (typeof s["sujet"] === "string" ? { sujet: s["sujet"] } : {}),
   head: () => ({
     meta: [
       { title: "Contact — Rokhaya Gueye" },
@@ -70,7 +70,7 @@ function Contact() {
                 <Field label="Nom" error={errors.nom}><input className={field} value={f.nom} onChange={set("nom")} autoComplete="name" placeholder="Votre nom" /></Field>
                 <Field label="Email" error={errors.email}><input className={field} type="email" value={f.email} onChange={set("email")} autoComplete="email" placeholder="vous@exemple.com" /></Field>
               </div>
-              <Field label="Sujet" error={errors.sujet}><input className={field} value={f.sujet} onChange={set("sujet")} placeholder="Objet de votre message" /></Field>
+              <Field label="Sujet" error={errors["sujet"]}><input className={field} value={f.sujet} onChange={set("sujet")} placeholder="Objet de votre message" /></Field>
               <Field label="Message" error={errors.message}><textarea className={`${field} min-h-40 resize-y`} value={f.message} onChange={set("message")} placeholder="Décrivez votre projet…" /></Field>
               <button type="submit" className={`${btnPrimary} w-full sm:w-auto`}><Send className="h-4 w-4" /> Envoyer le message</button>
               {sent && <p className="flex items-center gap-2 text-sm text-success"><CheckCircle2 className="h-4 w-4" /> Message préparé dans votre messagerie. Merci !</p>}
