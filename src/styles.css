@@ -35,6 +35,7 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
+  --shadow-card: var(--shadow-project);
 }
 
 :root {
@@ -67,6 +68,7 @@
   --gradient-glass: linear-gradient(145deg, oklch(0.3 0.08 300 / 35%), oklch(0.16 0.03 300 / 25%));
   --shadow-glow: 0 10px 40px -10px oklch(0.57 0.26 298 / 60%);
   --shadow-card: 0 20px 60px -30px oklch(0 0 0 / 80%);
+  --shadow-project: 0 12px 32px -20px oklch(0 0 0 / 65%);
 }
 
 @layer base {
@@ -79,7 +81,7 @@
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
   }
-  h1, h2, h3, h4 { font-family: var(--font-display); letter-spacing: -0.02em; }
+  h1, h2, h3, h4 { font-family: var(--font-display); letter-spacing: 0; }
   ::selection { background: var(--primary); color: var(--primary-foreground); }
 }
 
