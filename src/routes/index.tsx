@@ -14,6 +14,8 @@ export const Route = createFileRoute("/")({
       { name: "description", content: "Je transforme les idées en solutions numériques : développement web & mobile, design et intelligence artificielle." },
       { property: "og:title", content: "Rokhaya Gueye — Développeuse Web & Mobile" },
       { property: "og:description", content: "Je transforme les idées en solutions numériques." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: Home,
@@ -131,7 +133,7 @@ function Home() {
             <Reveal><Link to="/projets" className={btnOutline}>Tous les projets <ArrowRight className="h-4 w-4" /></Link></Reveal>
           </div>
           <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {projects.map((p, i) => <Reveal key={p.slug} delay={i * 0.08}><ProjectCard project={p} /></Reveal>)}
+            {projects.slice(0, 3).map((p, i) => <Reveal key={p.slug} delay={i * 0.08}><ProjectCard project={p} /></Reveal>)}
           </div>
         </div>
       </section>

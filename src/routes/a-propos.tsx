@@ -11,6 +11,8 @@ export const Route = createFileRoute("/a-propos")({
       { name: "description", content: "Parcours, passions et objectifs de Rokhaya Gueye, étudiante en informatique et développeuse d'applications." },
       { property: "og:title", content: "À propos — Rokhaya Gueye" },
       { property: "og:description", content: "Parcours, passions et objectifs de Rokhaya Gueye." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: About,

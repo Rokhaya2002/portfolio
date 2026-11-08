@@ -12,6 +12,8 @@ export const Route = createFileRoute("/services")({
       { name: "description", content: "Sites web, applications web et mobiles, création graphique Canva, accompagnement IA et Prompt Engineering." },
       { property: "og:title", content: "Services — Rokhaya Gueye" },
       { property: "og:description", content: "Ce que je peux réaliser pour vous." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: Services,
