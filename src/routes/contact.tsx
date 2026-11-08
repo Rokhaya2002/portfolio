@@ -14,6 +14,8 @@ export const Route = createFileRoute("/contact")({
       { name: "description", content: "Contactez Rokhaya Gueye pour un site web, une application ou un accompagnement IA." },
       { property: "og:title", content: "Contact — Rokhaya Gueye" },
       { property: "og:description", content: "Discutons de votre projet." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: Contact,

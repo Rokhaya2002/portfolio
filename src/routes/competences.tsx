@@ -12,6 +12,8 @@ export const Route = createFileRoute("/competences")({
       { name: "description", content: "Développement web (React, TypeScript), mobile (Flutter, Dart), design (Canva, UI/UX) et Prompt Engineering." },
       { property: "og:title", content: "Compétences — Rokhaya Gueye" },
       { property: "og:description", content: "Web, mobile, design et intelligence artificielle." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: Skills,

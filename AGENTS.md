@@ -28,3 +28,6 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+- Keep portfolio project metadata in the shared `src/data/site.ts` collection, including evidence limitations and image provenance, so cards and detail pages never contradict each other.
+- Project detail pages use the existing dynamic slug route; every gallery entry must resolve through that shared collection.
