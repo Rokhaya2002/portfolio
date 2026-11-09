@@ -1,5 +1,14 @@
 import { describe, expect, it } from "vitest";
-import { projects } from "./site";
+import { contact, projects } from "./site";
+
+describe("Public contact details", () => {
+  it("uses the email supplied by Rokhaya", () => {
+    expect(contact.email).toBe("kyagueye02@gmail.com");
+  });
+  it("uses the supplied Senegal phone number for WhatsApp", () => {
+    expect(contact.whatsapp).toBe("221771936845");
+  });
+});
 
 describe("Portfolio project requirements", () => {
   it.each(["sunu-sante", "sunetablis", "cite-leopold-fitness"])("keeps %s in development", (slug) => {

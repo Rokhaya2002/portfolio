@@ -56,7 +56,7 @@ function Contact() {
 
   const links = [
     contact.email && { href: `mailto:${contact.email}`, icon: Mail, label: "Email", value: contact.email },
-    contact.whatsapp && { href: `https://wa.me/${contact.whatsapp}`, icon: MessageCircle, label: "WhatsApp", value: "Discuter sur WhatsApp" },
+    contact.whatsapp && { href: `https://wa.me/${contact.whatsapp}`, icon: MessageCircle, label: "WhatsApp", value: `+${contact.whatsapp.replace(/^(\d{3})(\d{2})(\d{3})(\d{2})(\d{2})$/, "$1 $2 $3 $4 $5")}` },
     contact.linkedin && { href: contact.linkedin, icon: Linkedin, label: "LinkedIn", value: "Voir mon profil" },
     contact.github && { href: contact.github, icon: Github, label: "GitHub", value: "Voir mes dépôts" },
   ].filter(Boolean) as { href: string; icon: typeof Mail; label: string; value: string }[];
