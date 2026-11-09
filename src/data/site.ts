@@ -15,10 +15,10 @@ import samaAgent from "@/assets/sama-agent-presentation.jpg";
  * cvUrl : déposez votre CV dans /public (ex : /cv-rokhaya-gueye.pdf) puis indiquez son chemin.
  */
 export const contact = {
-  email: "",
+  email: "kyagueye02@gmail.com",
   linkedin: "",
   github: "",
-  whatsapp: "",
+  whatsapp: "221771936845",
   cvUrl: "",
 };
 
