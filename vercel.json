@@ -2,5 +2,8 @@
   "buildCommand": "npm run build",
   "outputDirectory": ".output/public",
   "installCommand": "npm install",
-  "framework": null
+  "framework": null,
+  "github": {
+    "silent": true
+  }
 }
