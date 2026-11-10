@@ -1,42 +1,33 @@
-# Maquette Inspired Portfolio
+# Portfolio
 
-Je joins à ce projet une maquette visuelle qui représente la direction artistique souhaitée pour mon portfolio.
+Portfolio personnel moderne développé avec React, TypeScript, TanStack Start et Tailwind CSS.
 
-Tu dois analyser attentivement cette maquette avant de commencer le développement.
+## ✨ Caractéristiques
 
-IMPORTANT :
+- Design moderne et responsive
+- Animations fluides avec Framer Motion
+- Navigation dynamique entre les pages
+- Optimisé pour les performances
 
-Respecte son identité visuelle, ses couleurs, ses proportions et son style.
+## 🚀 Développement
 
-Utilise-la comme référence graphique, et non comme une image à reproduire.
-
-Améliore les détails lorsque cela est nécessaire pour obtenir un résultat encore plus professionnel.
-
-Ma véritable photo est également fournie : utilise-la sans modifier mon apparence physique.
-
-Ne développe pas uniquement la page d'accueil. Toutes les pages doivent être conçues avec la même qualité visuelle.
-
-Chaque page doit avoir une composition propre et une navigation fonctionnelle.
-
-Je veux retrouver l'esprit de cette maquette dans le véritable site web.
-
-This project was built with [Lovable](https://lovable.dev).
-
-## Build with Lovable
-
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/4ded3b83-ef75-45da-9cf1-3bf8c19cb2cd).
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
-
-## Development
-
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+Prérequis : Node.js et npm
 
 ```sh
 git clone <this-repository-url>
-cd <repository-name>
-npm i
+cd portfolio
+npm install
 npm run dev
 ```
+
+Le site sera accessible sur `http://localhost:8080`
+
+## 📦 Build
+
+```sh
+npm run build
+```
+
+## 🌐 Déploiement
+
+Ce projet est optimisé pour être déployé sur Vercel, Netlify ou tout autre plateforme supportant les applications React.
