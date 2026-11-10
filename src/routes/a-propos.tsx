@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { GraduationCap, Cpu, Rocket, Target, Lightbulb, BookOpen, Sparkles, Mountain, ArrowRight } from "lucide-react";
 import { PageHeader, Reveal } from "@/components/Reveal";
-import { Portrait } from "@/components/Portrait";
+import { Portrait, portraitUrl } from "@/components/Portrait";
 import { btnPrimary } from "@/components/Button";
 
 export const Route = createFileRoute("/a-propos")({
@@ -13,6 +13,8 @@ export const Route = createFileRoute("/a-propos")({
       { property: "og:description", content: "Parcours, passions et objectifs de Rokhaya Gueye." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:image", content: portraitUrl },
+      { name: "twitter:image", content: portraitUrl },
     ],
   }),
   component: About,

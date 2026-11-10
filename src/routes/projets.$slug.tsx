@@ -20,6 +20,12 @@ export const Route = createFileRoute("/projets/$slug")({
           { property: "og:description", content: loaderData.project.desc },
           { property: "og:type", content: "website" },
           { name: "twitter:card", content: "summary_large_image" },
+          ...(loaderData.project.image.startsWith("https://")
+            ? [
+                { property: "og:image", content: loaderData.project.image },
+                { name: "twitter:image", content: loaderData.project.image },
+              ]
+            : []),
         ]
       : [{ title: "Projet introuvable" }, { name: "robots", content: "noindex" }],
   }),
