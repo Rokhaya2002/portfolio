@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { motion, useReducedMotion } from "framer-motion";
 import { ArrowRight, Mail, Rocket, MousePointer2, GraduationCap, Lightbulb, Star, Code2 } from "lucide-react";
 import { Eyebrow, Reveal } from "@/components/Reveal";
-import { Portrait } from "@/components/Portrait";
+import { Portrait, portraitUrl } from "@/components/Portrait";
 import { btnOutline, btnPrimary } from "@/components/Button";
 import { ProjectCard } from "@/components/ProjectCard";
 import { domains, projects } from "@/data/site";
@@ -16,6 +16,8 @@ export const Route = createFileRoute("/")({
       { property: "og:description", content: "Je transforme les idées en solutions numériques." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:image", content: portraitUrl },
+      { name: "twitter:image", content: portraitUrl },
     ],
   }),
   component: Home,

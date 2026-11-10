@@ -31,3 +31,4 @@ use the editor.
 
 - Keep portfolio project metadata in the shared `src/data/site.ts` collection, including evidence limitations and image provenance, so cards and detail pages never contradict each other.
 - Project detail pages use the existing dynamic slug route; every gallery entry must resolve through that shared collection.
+- Resolve CDN asset pointers through `src/lib/asset-url.ts` using the public project origin so cloned applications can load images without Lovable's local proxy; retain the original pointers and image provenance.

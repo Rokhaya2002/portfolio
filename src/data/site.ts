@@ -8,6 +8,7 @@ import bleuAzur from "@/assets/bleu-azur-presentation.jpg";
 import notes from "@/assets/notes-personnelles-presentation.jpg";
 import numeroSenegal from "@/assets/numero-senegal-presentation.jpg";
 import samaAgent from "@/assets/sama-agent-presentation.jpg";
+import { assetUrl } from "@/lib/asset-url";
 
 /**
  * Coordonnées configurables. Laissez une valeur vide ("") pour masquer le lien correspondant.
